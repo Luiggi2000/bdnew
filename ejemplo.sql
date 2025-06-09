@@ -2,15 +2,15 @@ CREATE SCHEMA IF NOT EXISTS UNS;
 USE UNS;
 
 DROP TABLE IF EXISTS cliente;
-CREATE TABLE cliente 
+CREATE TABLE cliente
  (id                         VARCHAR(3)  NOT NULL,
-  nombre                     VARCHAR(50) NOT NULL, -- CORRECCIÓN AQUÍ: Se aumentó el tamaño de 20 a 30
+  nombre                     VARCHAR(50) NOT NULL, -- Increased size to 50 based on your comment, which is more than 30
   telefono                   VARCHAR(20) NOT NULL,
   direccion                  VARCHAR(20),
   ciudad                     VARCHAR(20),
-  provincia                  VARCHAR(30),
+  provincia                  VARCHAR(15),
   pais                       VARCHAR(20),
-  codigo_postal              VARCHAR(30),
+  codigo_postal              VARCHAR(30), -- Using VARCHAR(30) as specified
   historial_crediticio       VARCHAR(9),
   ventas_rep_id              VARCHAR(3),
   region_id                  VARCHAR(3),
@@ -27,7 +27,7 @@ INSERT INTO cliente VALUES ('302', 'Toms Sporting BUENOs', '540-987-6543','6741 
 'Harrisonburg', 'VA','US', '22809','MALO', '14', '1', NULL);
 INSERT INTO cliente VALUES ('303', 'Athletic Attire', '540-123-6789','54 Market St',
 'Harrisonburg', 'VA','US', '22808','BUENO', '14', '1', NULL);
-INSERT INTO cliente 
+INSERT INTO cliente
 VALUES ('304', 'Athletics For All', '540-987-1234','286 Main St', 'Harrisonburg', 'VA',
 'US', '22808','EXCELENTE', '12', '1', NULL);
 INSERT INTO cliente VALUES ('305', 'Shoes for Sports', '540-123-9876','538 High St',
@@ -67,7 +67,7 @@ INSERT INTO cliente VALUES ('210', 'Futbol Sonora', '52-404555','5 Via Saguaro',
 NULL, 'Mexico', NULL,'EXCELENTE', '12', '2', NULL);
 INSERT INTO cliente VALUES ('211', 'Helmut''s Sports', '42-2111222','45 Modrany', 'Prague',
 NULL, 'Czechoslovakia', NULL,'EXCELENTE', '11', '5', NULL);
-INSERT INTO cliente VALUES ('212', 'Hamada Sport', '20-31209222','47A Corniche', 
+INSERT INTO cliente VALUES ('212', 'Hamada Sport', '20-31209222','47A Corniche',
 'Alexandria', NULL, 'Egypt', NULL,'EXCELENTE', '13', '3', NULL);
 INSERT INTO cliente VALUES ('213', 'Sports Emporium', '1-415-555-6281','4783 168th Street',
 'San Francisco', 'CA', 'US', NULL,'EXCELENTE', '11', '1', NULL);
