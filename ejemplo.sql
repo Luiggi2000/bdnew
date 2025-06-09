@@ -4,13 +4,13 @@ USE UNS;
 DROP TABLE IF EXISTS cliente;
 CREATE TABLE cliente 
  (id                         VARCHAR(3)  NOT NULL,
-  nombre                     VARCHAR(30) NOT NULL, -- CORRECCIÓN AQUÍ: Se aumentó el tamaño de 20 a 30
+  nombre                     VARCHAR(50) NOT NULL, -- CORRECCIÓN AQUÍ: Se aumentó el tamaño de 20 a 30
   telefono                   VARCHAR(20) NOT NULL,
   direccion                  VARCHAR(20),
   ciudad                     VARCHAR(20),
   provincia                  VARCHAR(15),
-  país                       VARCHAR(20),
-  codigo_postal              VARCHAR(15),
+  pais                       VARCHAR(20),
+  codigo_postal              VARCHAR(30),
   historial_crediticio       VARCHAR(9),
   ventas_rep_id              VARCHAR(3),
   region_id                  VARCHAR(3),
