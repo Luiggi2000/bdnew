@@ -8,7 +8,7 @@ CREATE TABLE cliente
   telefono                   VARCHAR(20) NOT NULL,
   direccion                  VARCHAR(20),
   ciudad                     VARCHAR(20),
-  provincia                  VARCHAR(15),
+  provincia                  VARCHAR(30),
   pais                       VARCHAR(20),
   codigo_postal              VARCHAR(30),
   historial_crediticio       VARCHAR(9),
